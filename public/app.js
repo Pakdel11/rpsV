@@ -39,9 +39,10 @@ function startTheGame() {
     //         document.getElementById("counter").innerText = i;
     //     }, i * 1000);
         
-    // }
-    document.getElementById("startBtn").style.cssText = "height: 0; opacity: 0;";
-    document.querySelector(".multy-player").style.cssText = "height: 0; opacity: 0;";
+    // // }
+    // document.getElementById("startBtn").style.cssText = "height: 0; opacity: 0;";
+    // document.querySelector(".multy-player").style.cssText = "height: 0; opacity: 0;";
+    document.querySelector(".btns-home").style.cssText = "height: 0; opacity: 0;";
     // setTimeout(() => {
         document.getElementById("counter").style.cssText = "height: 0; opacity: 0;";
         document.querySelector(".resolt").style.cssText = "opacity: 1; height: 50%; bottom: 5%; margin-bottom: 10%;";
