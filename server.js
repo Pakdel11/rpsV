@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 
       
-
+//new
 app.use(express.static(game))
 const io = socketio(server);
 
