@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiPlayer RPS</title>
+    <link rel="icon" href="../logo.png" type="image/png">
+    
+</head>
+<body style="background: #225; color: white;">
+    <h1 id="welcome"></h1>
+
+    <div class="match-cont">
+        <form id="form" action="">
+            <input
+            style="width: 300px; padding: 0.5rem 1rem; color: red;"
+            id="val"
+            autofocus>
+            <!-- <button id="send">Send</button> -->
+            <!-- <button id="submit" onkeyup="auto()">Sene</button> -->
+            <input id="valueTaker" type="hidden" value="">
+            
+        </form>
+
+        <div class="valer">
+            <div class="rock same">Rock</div>
+            <div class="papper same">Papper</div>
+            <div class="scissors same">Scissors</div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
