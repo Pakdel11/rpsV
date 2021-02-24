@@ -22,8 +22,19 @@ const onSubmit = (e)=>{
 }
 
 
+ 
+const addBtnListeners = () => {
+    ['rock', 'paper', 'scissors'].forEach((id) => {
+        const btn = document.getElementById(id);
+        btn.addEventListener('click', () => {
+            user.emit('turn', id);
+        })
+    })
+}
 
-// writeEvent('Welcome to the RPS Game')
+addBtnListeners()
+
+writeEvent('Welcome to the RPS Game')
 const user = io();
 user.on('message', writeEvent)
 
